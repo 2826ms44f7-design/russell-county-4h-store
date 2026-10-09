@@ -155,32 +155,149 @@ footer small{font-size:11px;line-height:1.8;color:#c8d2c8}
  </div>
 </section>
 
-<section class="order-section">
- <div class="kicker">Next step</div><h2>Review your order</h2>
- <p>Add merchandise to your bag, then review your items below. This website preview does not send orders to the office, so use the order summary to discuss your order with the 4-H organizers.</p>
- <div class="order-layout">
-  <div class="order-form">
-   <h3>Payment & delivery preferences</h3>
-   <div class="form-group"><label for="payment">How will you pay?</label>
-    <select class="field" id="payment"><option value="Bring payment to the office">Bring payment to the office</option><option value="Mail payment to the office">Mail payment to the office</option></select>
-   </div>
-   <div class="form-group"><label for="delivery">How would you like to receive your order?</label>
-    <select class="field" id="delivery"><option value="Office pickup">Office pickup</option><option value="Request mailing">Request mailing (confirm shipping cost)</option></select>
-   </div>
-   <div class="form-group"><label for="notes">Optional order notes</label><textarea class="field" id="notes" rows="3" placeholder="Questions about sizes, shipping, or pickup"></textarea></div>
-   <p class="notice">Do not enter sensitive personal or payment information here. This page does not transmit or save orders.</p>
-  </div>
-  <div class="order-summary">
-   <h3>Your bag</h3>
-   <div id="cartItems"><p class="notice">Your bag is empty. Add items from the collection above.</p></div>
-   <div class="summary-total"><span>Subtotal</span><span id="subtotal">$0.00</span></div>
-   <p class="notice">Prices are examples and must be confirmed. Shipping and taxes are not included.</p>
-   <button class="button" onclick="makeSummary()">PREVIEW ORDER DETAILS</button>
-   <div class="result" id="result"></div>
-   <button class="button" style="background:#fff;color:#183c2b;border:1px solid #183c2b" onclick="copySummary()">COPY ORDER SUMMARY</button>
-  </div>
- </div>
-</section>
+
+/* Professional merchandise shop redesign */
+body {
+  background: #ffffff;
+  color: #202720;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+.product, .card {
+  background: #fff;
+  border: 1px solid #e2e5df;
+  border-radius: 2px;
+  overflow: hidden;
+  box-shadow: none;
+  transition: border-color .2s ease;
+}
+
+.product:hover, .card:hover {
+  border-color: #8a9a8c;
+}
+
+.product-art, .art {
+  height: 250px;
+  background: #f5f5f0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-art svg, .art svg {
+  max-width: 220px;
+  max-height: 210px;
+}
+
+.product-info, .info {
+  padding: 20px;
+}
+
+.product-info h3, .info h3 {
+  color: #202720;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+.product-info p, .info p {
+  color: #747a72;
+  font-size: 12px;
+  line-height: 1.6;
+  min-height: 38px;
+}
+
+.price {
+  color: #183c2b;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 16px 0;
+}
+
+.product-info label, .info label {
+  color: #525a52;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.product-info select, .info select {
+  width: 100%;
+  min-height: 40px;
+  padding: 10px;
+  border: 1px solid #dfe2dc;
+  border-radius: 2px;
+  background: #fff;
+  color: #242b24;
+  font-size: 12px;
+}
+
+.add, .product-info .add {
+  width: 100%;
+  padding: 14px 10px;
+  background: #183c2b;
+  color: #fff;
+  border: 1px solid #183c2b;
+  border-radius: 2px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+
+.add:hover, .product-info .add:hover {
+  background: #315740;
+}
+
+.product-tag, .art-label {
+  background: #fff;
+  color: #4c584d;
+  border: 1px solid #e5e7e1;
+  font-size: 9px;
+  letter-spacing: 1px;
+  padding: 7px 9px;
+}
+
+.filters button {
+  border-radius: 2px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  padding: 12px 17px;
+}
+
+.filters button.active,
+.filters button:hover {
+  background: #183c2b;
+  color: #fff;
+  border-color: #183c2b;
+}
+
+@media (max-width: 520px) {
+  .products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .product-art, .art {
+    height: 165px;
+    padding: 10px;
+  }
+
+  .product-info, .info {
+    padding: 12px;
+  }
+}
+
 
 <footer><div class="footer-inner">
  <div class="brand"><span class="brand-mark" style="border-color:white;color:white">4-H</span><span><div class="brand-name">RUSSELL COUNTY 4-H</div><div class="brand-sub" style="color:#c8d2c8">MERCHANDISE FUNDRAISER</div></span></div>
