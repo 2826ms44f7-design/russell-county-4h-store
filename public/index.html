@@ -4,259 +4,201 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Russell County 4-H | Official Store</title>
-<meta name="description" content="Shop Russell County 4-H merchandise and support local youth programs.">
+<title>Russell County 4-H | Store</title>
 <style>
 :root {
-  --green:#183b2b;
-  --green2:#28523d;
-  --cream:#f7f5ef;
-  --white:#fff;
-  --ink:#20251f;
-  --muted:#747a72;
-  --line:#e5e5dc;
+  --green:#183c2b;
+  --green-light:#315740;
+  --cream:#f5f3ec;
+  --ink:#202720;
+  --muted:#777d75;
+  --line:#e4e5de;
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--white);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
-button,input,select{font:inherit}
+body{margin:0;color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+button,select{font:inherit}
 button{cursor:pointer}
-a{color:inherit;text-decoration:none}
-.topbar{background:var(--green);color:white;text-align:center;padding:10px 16px;font-size:12px;letter-spacing:1.2px}
-header{border-bottom:1px solid var(--line);background:white}
-.nav{max-width:1200px;margin:auto;padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:13px}
-.clover{width:43px;height:43px;border:1px solid var(--green);border-radius:50%;display:grid;place-items:center;color:var(--green);font-size:21px;font-weight:bold}
-.brand strong{display:block;font-size:15px;letter-spacing:1.2px}
-.brand small{display:block;margin-top:5px;color:var(--muted);font-size:10px;letter-spacing:2px}
-.navright{display:flex;align-items:center;gap:22px}
-.navright a{font-size:13px;color:#3c443c}
-.cartbutton{background:var(--green);color:white;border:0;padding:12px 17px;border-radius:3px;font-size:13px}
-.hero{background:var(--cream);padding:76px 24px}
-.hero-inner{max-width:1150px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:50px}
-.eyebrow{font-size:11px;font-weight:bold;letter-spacing:2.5px;color:var(--green2);text-transform:uppercase}
-h1{font-size:clamp(38px,5.5vw,65px);line-height:1.03;letter-spacing:-2px;margin:19px 0;font-weight:600}
-.hero p{max-width:480px;line-height:1.8;color:#62695f;font-size:15px}
-.primary{display:inline-block;margin-top:19px;background:var(--green);color:white;border:0;padding:15px 24px;border-radius:3px;font-size:13px}
-.hero-art{min-height:290px;background:var(--green);display:flex;align-items:center;justify-content:center;color:white;text-align:center;padding:30px}
-.hero-art .mark{border:1px solid #ffffff75;padding:40px 25px;width:100%;max-width:330px}
-.hero-art .symbol{font-size:54px;line-height:1}
-.hero-art h2{font-size:19px;letter-spacing:3px;margin:18px 0 7px}
-.hero-art p{color:#dce6dc;font-size:10px;letter-spacing:2px;margin:0}
-.section{max-width:1200px;margin:auto;padding:70px 24px}
-.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:30px}
-.section-head h2{font-size:32px;letter-spacing:-.8px;margin:10px 0 0}
-.section-head p{color:var(--muted);font-size:13px;line-height:1.6}
-.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:27px}
-.filter{border:1px solid var(--line);background:white;color:#4e564e;padding:10px 16px;border-radius:3px;font-size:12px}
-.filter.active,.filter:hover{background:var(--green);color:white;border-color:var(--green)}
-.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
-.product{border:1px solid var(--line);background:white;min-width:0}
-.product-image{height:235px;background:#f1f0e9;display:flex;align-items:center;justify-content:center;padding:20px;position:relative}
-.product-image svg{width:100%;height:100%;max-width:230px}
-.product-image .tag{position:absolute;top:12px;left:12px;background:white;padding:7px 9px;font-size:9px;letter-spacing:1px;text-transform:uppercase}
-.product-info{padding:19px}
-.product-info h3{font-size:15px;margin:0 0 8px;font-weight:600}
-.product-info .desc{font-size:12px;color:var(--muted);line-height:1.5;min-height:34px}
+.top{background:var(--green);color:white;text-align:center;padding:10px;font-size:11px;letter-spacing:2px}
+header{background:white;border-bottom:1px solid var(--line)}
+.nav{max-width:1180px;margin:auto;padding:20px 24px;display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-icon{border:1px solid var(--green);color:var(--green);width:42px;height:42px;display:grid;place-items:center;font-weight:bold;border-radius:50%;font-size:14px}
+.logo b{display:block;font-size:14px;letter-spacing:1.3px}
+.logo small{display:block;color:var(--muted);font-size:9px;letter-spacing:2px;margin-top:5px}
+.nav button{background:var(--green);color:white;border:0;padding:13px 17px;font-size:12px}
+.hero{background:var(--cream)}
+.hero-inner{max-width:1180px;margin:auto;padding:72px 24px;display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.kicker{color:var(--green-light);font-size:10px;font-weight:bold;letter-spacing:2.5px;text-transform:uppercase}
+h1{font-size:clamp(43px,6vw,72px);letter-spacing:-3px;line-height:1.02;font-weight:500;margin:20px 0}
+.hero p{color:#60695f;line-height:1.8;font-size:15px;max-width:440px}
+.btn{display:inline-block;background:var(--green);color:white;border:0;padding:15px 22px;margin-top:18px;font-size:11px;letter-spacing:1px;text-decoration:none}
+.hero-panel{background:var(--green);color:white;min-height:300px;display:grid;place-items:center;padding:30px;text-align:center}
+.hero-panel-inner{border:1px solid #ffffff55;padding:45px 20px;width:100%}
+.hero-panel .fourh{font-size:65px;font-weight:bold;letter-spacing:-4px}
+.hero-panel h2{font-size:17px;letter-spacing:3px;margin:12px 0}
+.hero-panel small{font-size:9px;letter-spacing:2px;color:#d9e1d8}
+.section{max-width:1180px;margin:auto;padding:70px 24px}
+.section-top{display:flex;justify-content:space-between;align-items:end;margin-bottom:27px}
+.section h2{font-size:32px;letter-spacing:-1px;font-weight:500;margin:12px 0 0}
+.section-top p{font-size:12px;color:var(--muted);line-height:1.6}
+.filters{display:flex;gap:8px;margin-bottom:25px;flex-wrap:wrap}
+.filters button{background:white;border:1px solid var(--line);padding:10px 15px;font-size:11px;color:#454d45}
+.filters button.active,.filters button:hover{background:var(--green);color:white;border-color:var(--green)}
+.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px}
+.card{border:1px solid var(--line);background:white}
+.art{height:220px;background:#f0efe9;display:grid;place-items:center;padding:15px;position:relative}
+.art svg{width:100%;height:100%;max-width:220px}
+.art-label{position:absolute;left:11px;top:11px;background:white;padding:7px;font-size:9px;letter-spacing:1px;text-transform:uppercase}
+.info{padding:17px}
+.info h3{font-size:14px;font-weight:600;margin:0 0 8px}
+.info p{font-size:11px;color:var(--muted);line-height:1.5;min-height:32px}
 .price{font-size:15px;font-weight:bold;margin:13px 0}
-.product-info label{display:block;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#656b63;margin:12px 0 6px}
-.product-info select{width:100%;padding:10px;border:1px solid var(--line);background:white;border-radius:2px;font-size:12px}
-.add{width:100%;margin-top:14px;padding:12px;background:var(--green);border:1px solid var(--green);color:white;border-radius:2px;font-size:12px}
-.add:hover,.primary:hover,.cartbutton:hover{background:var(--green2)}
-.about{background:var(--cream)}
-.about-inner{max-width:1150px;margin:auto;padding:62px 24px;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
-.about h2{font-size:34px;line-height:1.15;margin:13px 0}
-.about p{color:#62695f;font-size:14px;line-height:1.8}
-.about-box{background:var(--green);color:white;padding:38px}
-.about-box h3{font-size:21px;margin:0 0 12px}
-.about-box p{color:#dce6dc}
-footer{background:#172d22;color:white;padding:35px 24px}
-.footer-inner{max-width:1150px;margin:auto;display:flex;justify-content:space-between;gap:20px;align-items:center}
-footer small{color:#c5d0c5;line-height:1.7}
-.overlay{display:none;position:fixed;inset:0;background:#0008;z-index:5}
-.overlay.show{display:block}
-.drawer{position:fixed;z-index:6;right:0;top:0;height:100%;width:min(430px,100%);background:white;padding:25px;transform:translateX(110%);transition:transform .25s;overflow:auto}
-.drawer.show{transform:translateX(0)}
-.drawer-head{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:17px}
-.drawer-head h2{margin:0;font-size:22px}
-.close{border:0;background:transparent;font-size:27px}
-.cartitem{display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid var(--line);padding:18px 0;font-size:13px}
-.cartitem small{display:block;color:var(--muted);margin-top:6px}
-.remove{margin-top:8px;border:0;background:none;color:#8c3939;font-size:11px;padding:0}
-.qty{display:flex;align-items:center;gap:9px;margin-top:9px}
-.qty button{background:white;border:1px solid var(--line);width:25px;height:25px}
-.cart-summary{padding-top:20px}
-.cart-summary .total{display:flex;justify-content:space-between;font-size:17px;font-weight:bold}
-.cart-summary p{font-size:11px;color:var(--muted);line-height:1.6}
-.cart-summary button{width:100%;margin-top:10px;padding:14px;background:var(--green);color:white;border:0}
-.empty{color:var(--muted);font-size:13px;padding:25px 0}
-#checkoutForm{display:none;margin-top:20px;border-top:1px solid var(--line);padding-top:15px}
-#checkoutForm input,#checkoutForm select{width:100%;padding:12px;margin:6px 0 10px;border:1px solid var(--line)}
-#checkoutForm label{font-size:12px;color:#555}
-#checkoutForm button{margin-top:8px}
-.notice{display:none;background:#edf4eb;border:1px solid #cbdcc8;padding:14px;font-size:13px;line-height:1.6;margin-top:14px}
-@media(max-width:850px){.products{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-inner{grid-template-columns:1fr}.hero-art{min-height:230px}.about-inner{grid-template-columns:1fr}}
-@media(max-width:520px){.nav{padding:17px 15px}.navright{gap:10px}.navright a{display:none}.brand strong{font-size:12px}.brand small{font-size:8px}.clover{width:36px;height:36px}.hero{padding:48px 18px}.section{padding:48px 15px}.products{gap:10px}.product-image{height:160px;padding:10px}.product-info{padding:12px}.product-info h3{font-size:13px}.section-head{display:block}.section-head h2{font-size:27px}.about-inner{padding:45px 18px}.footer-inner{display:block}.footer-inner small{display:block;margin-top:10px}}
+.info label{display:block;color:var(--muted);font-size:9px;letter-spacing:1px;margin:12px 0 6px}
+.info select{width:100%;padding:10px;border:1px solid var(--line);background:white;font-size:11px}
+.add{margin-top:14px;width:100%;background:var(--green);color:white;border:0;padding:13px;font-size:10px;letter-spacing:1px}
+.add:hover,.btn:hover{background:var(--green-light)}
+.mission{background:var(--cream)}
+.mission-inner{max-width:1180px;margin:auto;padding:65px 24px;display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.mission h2{font-size:35px;line-height:1.15;font-weight:500;margin:15px 0}
+.mission p{color:#62695f;font-size:13px;line-height:1.9}
+.mission-card{background:var(--green);color:white;padding:35px}
+.mission-card h3{font-size:22px;font-weight:500}
+.mission-card p{color:#d8e0d8}
+footer{background:#172d22;color:white;padding:30px 24px}
+.footer-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;align-items:center}
+footer small{color:#c6d1c7;font-size:11px;line-height:1.7}
+.shade{display:none;position:fixed;inset:0;background:#0008;z-index:9}
+.shade.open{display:block}
+.cart{position:fixed;right:0;top:0;width:min(420px,100%);height:100%;background:white;z-index:10;padding:24px;overflow:auto;transform:translateX(110%);transition:.25s}
+.cart.open{transform:translateX(0)}
+.cart-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:15px}
+.cart-head h2{font-weight:500}
+.close{background:none;border:0;font-size:26px}
+.cart-row{padding:17px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:10px;font-size:12px}
+.cart-row small{display:block;color:var(--muted);margin-top:7px}
+.cart-row button{background:white;border:1px solid var(--line);padding:4px 9px;margin-top:8px}
+.total{display:flex;justify-content:space-between;font-weight:bold;margin:20px 0}
+.checkout{width:100%;padding:14px;background:var(--green);color:white;border:0}
+.cart-note{font-size:11px;color:var(--muted);line-height:1.6}
+#demo{display:none;border-top:1px solid var(--line);margin-top:20px;padding-top:15px}
+#demo input,#demo select{width:100%;padding:12px;margin:7px 0 12px;border:1px solid var(--line)}
+#demo label{font-size:11px}
+#notice{display:none;padding:14px;background:#eef4ed;font-size:12px;line-height:1.7;margin-top:15px}
+@media(max-width:850px){.products{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-inner,.mission-inner{grid-template-columns:1fr}.hero-panel{min-height:240px}}
+@media(max-width:500px){.nav{padding:16px}.logo b{font-size:11px}.logo small{font-size:8px}.hero-inner{padding:45px 18px;gap:30px}.section{padding:48px 14px}.products{gap:10px}.art{height:155px;padding:8px}.info{padding:11px}.info h3{font-size:12px}.section-top{display:block}.mission-inner{padding:45px 18px;gap:25px}.footer-inner{display:block}.footer-inner small{display:block;margin-top:15px}}
 </style>
 </head>
 <body>
-<div class="topbar">RUSSELL COUNTY 4-H · MERCHANDISE THAT SUPPORTS OUR COMMUNITY</div>
+<div class="top">RUSSELL COUNTY, VIRGINIA &nbsp; / &nbsp; 4-H MERCHANDISE</div>
 <header>
-  <div class="nav">
-    <a class="brand" href="#">
-      <span class="clover">4-H</span>
-      <span><strong>RUSSELL COUNTY 4-H</strong><small>OFFICIAL MERCHANDISE</small></span>
-    </a>
-    <div class="navright">
-      <a href="#shop">Shop All</a>
-      <a href="#about">Our Mission</a>
-      <button class="cartbutton" onclick="openCart()">Bag (<span id="cartCount">0</span>)</button>
-    </div>
-  </div>
+ <div class="nav">
+  <a class="logo" href="#">
+   <span class="logo-icon">4-H</span>
+   <span><b>RUSSELL COUNTY 4-H</b><small>OFFICIAL STORE</small></span>
+  </a>
+  <button onclick="toggleCart(true)">SHOPPING BAG (<span id="count">0</span>)</button>
+ </div>
 </header>
 
-<main>
 <section class="hero">
-  <div class="hero-inner">
-    <div>
-      <div class="eyebrow">Russell County · Virginia</div>
-      <h1>Wear what<br>you stand for.</h1>
-      <p>Quality merchandise representing Russell County 4-H. Every piece celebrates leadership, service, and the next generation of our community.</p>
-      <a class="primary" href="#shop">SHOP THE COLLECTION &nbsp; →</a>
-    </div>
-    <div class="hero-art">
-      <div class="mark">
-        <div class="symbol">♣</div>
-        <h2>RUSSELL COUNTY</h2>
-        <p>4-H · LEADERSHIP · COMMUNITY</p>
-      </div>
-    </div>
+ <div class="hero-inner">
+  <div>
+   <div class="kicker">The official collection</div>
+   <h1>Made for the<br>next generation.</h1>
+   <p>Rep your community with Russell County 4-H merchandise. Simple, comfortable essentials inspired by leadership, service, and a strong local tradition.</p>
+   <a class="btn" href="#shop">EXPLORE THE COLLECTION &nbsp; →</a>
   </div>
+  <div class="hero-panel">
+   <div class="hero-panel-inner">
+    <div class="fourh">4-H</div>
+    <h2>RUSSELL COUNTY</h2>
+    <small>LEADERSHIP · SERVICE · COMMUNITY</small>
+   </div>
+  </div>
+ </div>
 </section>
 
 <section class="section" id="shop">
-  <div class="section-head">
-    <div><div class="eyebrow">The collection</div><h2>Shop merchandise</h2></div>
-    <p>Everyday essentials.<br>One community.</p>
-  </div>
-  <div class="filters" id="filters">
-    <button class="filter active" data-filter="all">All Products</button>
-    <button class="filter" data-filter="apparel">Apparel</button>
-    <button class="filter" data-filter="accessories">Accessories</button>
-  </div>
-  <div class="products" id="products"></div>
+ <div class="section-top">
+  <div><div class="kicker">Shop the collection</div><h2>Merchandise</h2></div>
+  <p>Everyday essentials.<br>Made to represent.</p>
+ </div>
+ <div class="filters">
+  <button class="active" data-filter="all">ALL ITEMS</button>
+  <button data-filter="apparel">APPAREL</button>
+  <button data-filter="accessories">ACCESSORIES</button>
+ </div>
+ <div class="products" id="products"></div>
 </section>
 
-<section class="about" id="about">
-  <div class="about-inner">
-    <div>
-      <div class="eyebrow">More than merchandise</div>
-      <h2>Growing leaders.<br>Building community.</h2>
-      <p>Russell County 4-H helps young people develop leadership, responsibility, and practical skills through hands-on learning and community involvement.</p>
-    </div>
-    <div class="about-box">
-      <h3>Wear it with purpose.</h3>
-      <p>Your support helps represent a program built around learning by doing, serving others, and preparing young people for the future.</p>
-    </div>
+<section class="mission">
+ <div class="mission-inner">
+  <div><div class="kicker">Our purpose</div><h2>Growing leaders.<br>Strengthening community.</h2>
+   <p>Russell County 4-H gives young people opportunities to learn by doing, build confidence, and develop practical leadership skills. Thank you for supporting 4-H.</p>
   </div>
+  <div class="mission-card"><h3>Wear it with purpose.</h3><p>Show your support for local 4-H programs with merchandise made for everyday life.</p></div>
+ </div>
 </section>
-</main>
 
-<footer>
-  <div class="footer-inner">
-    <div class="brand"><span class="clover" style="border-color:#fff;color:#fff">4-H</span><span><strong>RUSSELL COUNTY 4-H</strong><small>OFFICIAL MERCHANDISE</small></span></div>
-    <small>Russell County, Virginia<br>Thank you for supporting 4-H.</small>
-  </div>
-</footer>
+<footer><div class="footer-inner">
+ <div class="logo"><span class="logo-icon" style="border-color:white;color:white">4-H</span><span><b>RUSSELL COUNTY 4-H</b><small>OFFICIAL STORE</small></span></div>
+ <small>Russell County, Virginia<br>Thank you for supporting 4-H.</small>
+</div></footer>
 
-<div class="overlay" id="overlay" onclick="closeCart()"></div>
-<aside class="drawer" id="drawer" aria-label="Shopping cart">
-  <div class="drawer-head"><h2>Your bag</h2><button class="close" onclick="closeCart()" aria-label="Close cart">×</button></div>
-  <div id="cartItems"></div>
-  <div class="cart-summary" id="cartSummary" style="display:none">
-    <div class="total"><span>Subtotal</span><span id="subtotal">$0.00</span></div>
-    <p>Shipping or pickup details and any applicable taxes will be confirmed separately. This demo does not process payments or send orders.</p>
-    <button onclick="showCheckout()">Continue</button>
-  </div>
-  <form id="checkoutForm" onsubmit="demoOrder(event)">
-    <h3>Order details — demo only</h3>
-    <p style="font-size:12px;color:#777">This preview does not submit a real order. Do not enter real personal or payment information.</p>
-    <label for="customerName">Name</label><input id="customerName" placeholder="Demo name" required>
-    <label for="customerEmail">Email</label><input id="customerEmail" type="email" placeholder="demo@example.com" required>
-    <label for="fulfillment">Fulfillment</label>
-    <select id="fulfillment"><option>Pickup</option><option>Shipping (not configured)</option></select>
-    <button type="submit">Preview Demo Order</button>
-  </form>
-  <div class="notice" id="notice"></div>
+<div class="shade" id="shade" onclick="toggleCart(false)"></div>
+<aside class="cart" id="cart">
+ <div class="cart-head"><h2>Your bag</h2><button class="close" onclick="toggleCart(false)">×</button></div>
+ <div id="items"></div>
+ <div id="summary" style="display:none">
+  <div class="total"><span>Subtotal</span><span id="subtotal">$0.00</span></div>
+  <p class="cart-note">This is a website preview. No payment is processed and no order is sent or saved.</p>
+  <button class="checkout" onclick="document.getElementById('demo').style.display='block'">CONTINUE TO DEMO CHECKOUT</button>
+ </div>
+ <form id="demo" onsubmit="demoCheckout(event)">
+  <h3>Demo checkout</h3>
+  <p class="cart-note">Do not enter real personal or payment information.</p>
+  <label>Sample name<input required placeholder="Sample customer"></label>
+  <label>Sample email<input type="email" required placeholder="sample@example.com"></label>
+  <label>Fulfillment<select><option>Pickup</option><option>Shipping (not configured)</option></select></label>
+  <button class="checkout">PREVIEW ORDER</button>
+ </form>
+ <div id="notice"></div>
 </aside>
 
 <script>
-const products = [
- {id:1,name:"Classic 4-H T-Shirt",category:"apparel",price:20,desc:"Everyday comfort. Clean, understated branding.",type:"shirt",sizes:["S","M","L","XL","2XL"],colors:["Forest Green","White"]},
- {id:2,name:"Premium 4-H Hoodie",category:"apparel",price:38,desc:"A comfortable layer for cool mornings and events.",type:"hoodie",sizes:["S","M","L","XL","2XL"],colors:["Forest Green","Charcoal"]},
- {id:3,name:"Structured 4-H Hat",category:"accessories",price:22,desc:"A classic cap with a simple embroidered look.",type:"hat",sizes:["One Size"],colors:["Forest Green","Charcoal"]},
- {id:4,name:"4-H Clover Stickers",category:"accessories",price:5,desc:"A simple way to show your 4-H pride.",type:"stickers",sizes:["Sticker Pack"],colors:["Green & White"]}
+const products=[
+ {id:1,name:"Classic 4-H T-Shirt",category:"apparel",price:20,desc:"Everyday comfort with understated branding.",type:"shirt",sizes:["S","M","L","XL","2XL"],colors:["Forest Green","White"]},
+ {id:2,name:"Premium 4-H Hoodie",category:"apparel",price:38,desc:"A versatile layer for cool mornings and events.",type:"hoodie",sizes:["S","M","L","XL","2XL"],colors:["Forest Green","Charcoal"]},
+ {id:3,name:"Structured 4-H Hat",category:"accessories",price:22,desc:"A classic cap with a clean embroidered look.",type:"hat",sizes:["One Size"],colors:["Forest Green","Charcoal"]},
+ {id:4,name:"4-H Clover Stickers",category:"accessories",price:5,desc:"A simple way to show your 4-H pride.",type:"sticker",sizes:["Sticker Pack"],colors:["Green & White"]}
 ];
 const cart=[];
 const money=n=>"$"+n.toFixed(2);
-
-function productArt(type,color){
- const green=color==="White"?"#ffffff":color==="Charcoal"?"#353936":"#214b35";
- const outline=color==="White"?"#d4d4d0":green;
- const ink=color==="White"?"#214b35":"#ffffff";
- if(type==="shirt") return `<svg viewBox="0 0 240 220" role="img" aria-label="T-shirt mockup"><path d="M76 30 L42 48 L17 88 L48 106 L65 82 L65 190 Q120 201 175 190 L175 82 L192 106 L223 88 L198 48 L164 30 Q120 51 76 30Z" fill="${green}" stroke="${outline}" stroke-width="2"/><text x="120" y="103" text-anchor="middle" font-size="20" font-weight="bold" fill="${ink}">4-H</text><text x="120" y="116" text-anchor="middle" font-size="6" letter-spacing="1" fill="${ink}">RUSSELL COUNTY</text></svg>`;
- if(type==="hoodie") return `<svg viewBox="0 0 240 220" role="img" aria-label="Hoodie mockup"><path d="M87 31 Q120 3 153 31 L181 43 L210 73 L190 104 L173 88 L177 194 Q120 205 63 194 L67 88 L50 104 L30 73 L59 43Z" fill="${green}" stroke="${outline}" stroke-width="2"/><path d="M87 31 Q120 67 153 31" fill="none" stroke="${outline}" stroke-width="3"/><path d="M90 130 L150 130 L155 164 L85 164Z" fill="${green}" stroke="${outline}" stroke-width="1.5"/><text x="120" y="101" text-anchor="middle" font-size="20" font-weight="bold" fill="${ink}">4-H</text><text x="120" y="114" text-anchor="middle" font-size="6" letter-spacing="1" fill="${ink}">RUSSELL COUNTY</text></svg>`;
- if(type==="hat") return `<svg viewBox="0 0 240 220" role="img" aria-label="Baseball cap mockup"><path d="M39 128 Q42 65 113 56 Q171 53 190 111 L184 137 L45 146Z" fill="${green}" stroke="${outline}" stroke-width="2"/><path d="M45 135 Q99 122 184 135 Q211 140 221 155 Q154 183 50 150Z" fill="${green}" stroke="${outline}" stroke-width="2"/><path d="M113 57 L115 126" stroke="${outline}" stroke-width="1.5"/><text x="117" y="104" text-anchor="middle" font-size="19" font-weight="bold" fill="${ink}">4-H</text></svg>`;
- return `<svg viewBox="0 0 240 220" role="img" aria-label="Sticker pack mockup"><rect x="25" y="23" width="190" height="174" rx="5" fill="#fff" stroke="#d9ddd5" stroke-width="2"/><g fill="#214b35"><circle cx="80" cy="73" r="18"/><circle cx="104" cy="73" r="18"/><circle cx="80" cy="97" r="18"/><circle cx="104" cy="97" r="18"/></g><text x="92" y="89" text-anchor="middle" font-size="14" font-weight="bold" fill="#fff">4-H</text><g transform="translate(130 62) scale(.55)" fill="#507c4f"><circle cx="0" cy="0" r="20"/><circle cx="25" cy="0" r="20"/><circle cx="0" cy="25" r="20"/><circle cx="25" cy="25" r="20"/></g><text x="120" y="145" text-anchor="middle" font-size="10" letter-spacing="1" fill="#214b35">RUSSELL COUNTY</text><text x="120" y="160" text-anchor="middle" font-size="8" fill="#667166">STICKER PACK</text></svg>`;
+function art(p){
+ const g=p.colors[0]==="Charcoal"?"#383d39":"#234b35";
+ const white=p.colors[0]==="White";
+ const c=white?"#fff":g,ink=white?"#234b35":"#fff",stroke=white?"#d4d4d0":c;
+ if(p.type==="shirt")return `<svg viewBox="0 0 220 200" aria-label="T-shirt illustration"><path d="M72 25 42 39 18 75 43 93 60 72 60 177Q110 187 160 177L160 72 177 93 202 75 178 39 148 25Q110 43 72 25Z" fill="${c}" stroke="${stroke}" stroke-width="2"/><text x="110" y="94" fill="${ink}" text-anchor="middle" font-size="21" font-weight="bold">4-H</text><text x="110" y="106" fill="${ink}" text-anchor="middle" font-size="6" letter-spacing="1">RUSSELL COUNTY</text></svg>`;
+ if(p.type==="hoodie")return `<svg viewBox="0 0 220 200" aria-label="Hoodie illustration"><path d="M78 29Q110 2 142 29L169 41 197 69 179 97 160 81 164 178Q110 188 56 178L60 81 41 97 23 69 51 41Z" fill="${c}" stroke="${stroke}" stroke-width="2"/><path d="M78 29Q110 62 142 29" fill="none" stroke="${stroke}" stroke-width="3"/><path d="M81 128H139L145 154H75Z" fill="${c}" stroke="${stroke}"/><text x="110" y="95" fill="${ink}" text-anchor="middle" font-size="21" font-weight="bold">4-H</text><text x="110" y="107" fill="${ink}" text-anchor="middle" font-size="6">RUSSELL COUNTY</text></svg>`;
+ if(p.type==="hat")return `<svg viewBox="0 0 220 200" aria-label="Hat illustration"><path d="M37 119Q41 59 108 49Q167 48 183 106L180 128 43 136Z" fill="${c}" stroke="${stroke}" stroke-width="2"/><path d="M44 127Q110 111 181 127Q205 133 215 148Q140 173 48 143Z" fill="${c}" stroke="${stroke}" stroke-width="2"/><path d="M109 50V117" stroke="${stroke}"/><text x="112" y="98" fill="${ink}" text-anchor="middle" font-size="20" font-weight="bold">4-H</text></svg>`;
+ return `<svg viewBox="0 0 220 200" aria-label="Sticker illustration"><rect x="22" y="17" width="176" height="166" rx="5" fill="#fff" stroke="#d9ddd5" stroke-width="2"/><g fill="#28563a"><circle cx="79" cy="65" r="19"/><circle cx="103" cy="65" r="19"/><circle cx="79" cy="89" r="19"/><circle cx="103" cy="89" r="19"/></g><text x="91" y="82" text-anchor="middle" fill="white" font-size="14" font-weight="bold">4-H</text><text x="110" y="132" text-anchor="middle" fill="#234b35" font-size="9" letter-spacing="1">RUSSELL COUNTY</text><text x="110" y="147" text-anchor="middle" fill="#777" font-size="8">STICKER PACK</text></svg>`;
 }
-
-function renderProducts(filter="all"){
- const container=document.getElementById("products");
- container.innerHTML=products.filter(p=>filter==="all"||p.category===filter).map(p=>`
- <article class="product">
-  <div class="product-image"><span class="tag">${p.category==="apparel"?"Apparel":"Accessories"}</span>${productArt(p.type,p.colors[0])}</div>
-  <div class="product-info">
-   <h3>${p.name}</h3><div class="desc">${p.desc}</div><div class="price">${money(p.price)}</div>
-   <label for="size-${p.id}">Size</label><select id="size-${p.id}">${p.sizes.map(s=>`<option>${s}</option>`).join("")}</select>
-   <label for="color-${p.id}">Color</label><select id="color-${p.id}">${p.colors.map(c=>`<option>${c}</option>`).join("")}</select>
-   <button class="add" onclick="addToCart(${p.id})">ADD TO BAG</button>
-  </div>
- </article>`).join("");
+function render(filter="all"){
+ document.getElementById("products").innerHTML=products.filter(p=>filter==="all"||p.category===filter).map(p=>`<article class="card"><div class="art"><span class="art-label">${p.category}</span>${art(p)}</div><div class="info"><h3>${p.name}</h3><p>${p.desc}</p><div class="price">${money(p.price)}</div><label for="size${p.id}">SIZE</label><select id="size${p.id}">${p.sizes.map(s=>`<option>${s}</option>`).join("")}</select><label for="color${p.id}">COLOR</label><select id="color${p.id}">${p.colors.map(s=>`<option>${s}</option>`).join("")}</select><button class="add" onclick="add(${p.id})">ADD TO BAG</button></div></article>`).join("");
 }
-document.getElementById("filters").addEventListener("click",e=>{
- const b=e.target.closest("button[data-filter]");if(!b)return;
- document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));
- renderProducts(b.dataset.filter);
-});
-function addToCart(id){
- const p=products.find(x=>x.id===id);
- const size=document.getElementById("size-"+id).value;
- const color=document.getElementById("color-"+id).value;
- const existing=cart.find(x=>x.id===id&&x.size===size&&x.color===color);
- if(existing)existing.qty++;else cart.push({id,name:p.name,price:p.price,size,color,qty:1});
- updateCart();openCart();
-}
-function updateCart(){
- document.getElementById("cartCount").textContent=cart.reduce((n,x)=>n+x.qty,0);
- const items=document.getElementById("cartItems");
- if(!cart.length){items.innerHTML='<div class="empty">Your bag is empty. Browse the collection to get started.</div>';document.getElementById("cartSummary").style.display="none";document.getElementById("checkoutForm").style.display="none";return}
- items.innerHTML=cart.map((x,i)=>`<div class="cartitem"><div><strong>${x.name}</strong><small>${x.size} · ${x.color}</small><div class="qty"><button onclick="changeQty(${i},-1)">−</button><span>${x.qty}</span><button onclick="changeQty(${i},1)">+</button></div><button class="remove" onclick="removeItem(${i})">Remove</button></div><strong>${money(x.price*x.qty)}</strong></div>`).join("");
+document.querySelector(".filters").addEventListener("click",e=>{const b=e.target.closest("[data-filter]");if(!b)return;document.querySelectorAll(".filters button").forEach(x=>x.classList.toggle("active",x===b));render(b.dataset.filter)});
+function add(id){const p=products.find(p=>p.id===id),size=document.getElementById("size"+id).value,color=document.getElementById("color"+id).value;const old=cart.find(x=>x.id===id&&x.size===size&&x.color===color);if(old)old.qty++;else cart.push({id,name:p.name,price:p.price,size,color,qty:1});update();toggleCart(true)}
+function update(){
+ document.getElementById("count").textContent=cart.reduce((n,x)=>n+x.qty,0);
+ document.getElementById("items").innerHTML=cart.length?cart.map((x,i)=>`<div class="cart-row"><div><strong>${x.name}</strong><small>${x.size} · ${x.color}</small><button onclick="quantity(${i},-1)">−</button> ${x.qty} <button onclick="quantity(${i},1)">+</button><button onclick="removeItem(${i})">Remove</button></div><strong>${money(x.price*x.qty)}</strong></div>`).join(""):'<p style="color:#777;font-size:13px;padding:20px 0">Your bag is empty.</p>';
+ document.getElementById("summary").style.display=cart.length?"block":"none";
  document.getElementById("subtotal").textContent=money(cart.reduce((n,x)=>n+x.price*x.qty,0));
- document.getElementById("cartSummary").style.display="block";
 }
-function changeQty(i,n){cart[i].qty+=n;if(cart[i].qty<=0)cart.splice(i,1);updateCart()}
-function removeItem(i){cart.splice(i,1);updateCart()}
-function openCart(){document.getElementById("overlay").classList.add("show");document.getElementById("drawer").classList.add("show")}
-function closeCart(){document.getElementById("overlay").classList.remove("show");document.getElementById("drawer").classList.remove("show")}
-function showCheckout(){document.getElementById("checkoutForm").style.display="block";document.getElementById("notice").style.display="none"}
-function demoOrder(e){
- e.preventDefault();
- const total=cart.reduce((n,x)=>n+x.price*x.qty,0);
- const notice=document.getElementById("notice");
- notice.style.display="block";
- notice.innerHTML="<strong>Demo preview only</strong><br>Your sample cart total is "+money(total)+". No order was sent, no payment was taken, and these details were not saved.";
-}
-renderProducts();
-updateCart();
+function quantity(i,n){cart[i].qty+=n;if(cart[i].qty<=0)cart.splice(i,1);update()}
+function removeItem(i){cart.splice(i,1);update()}
+function toggleCart(open){document.getElementById("shade").classList.toggle("open",open);document.getElementById("cart").classList.toggle("open",open)}
+function demoCheckout(e){e.preventDefault();const n=document.getElementById("notice");n.style.display="block";n.textContent="Demo only: your cart total is "+money(cart.reduce((s,x)=>s+x.price*x.qty,0))+". No order was submitted and no payment was taken."}
+render();update();
 </script>
 </body>
 </html>
